@@ -17,4 +17,23 @@ document.getElementById('toggle-history-btn').addEventListener('click', function
 
 // Noakhali form
 
+document.getElementById('noakhali-donation-btn').addEventListener('click', function () {
+    const totalBalance = getElementText('total-balance');
+    const currentNoakhaliDonation = getElementText('noakhali-current-donation');
+    const noakhaliDonationInput = getInputFieldValue('noakhali-donation-input');
+    if (isNaN(noakhaliDonationInput) === false && totalBalance > noakhaliDonationInput) {
+        const totalNoakhaliDonation = currentNoakhaliDonation + noakhaliDonationInput;
+        const newTotalBalance = totalBalance - noakhaliDonationInput;
+        document.getElementById('noakhali-current-donation').innerText = totalNoakhaliDonation;
+
+        document.getElementById('total-balance').innerText = newTotalBalance;
+
+        document.getElementById('noakhali-donation-input').value = '';
+        console.log
+    }
+    else {
+        alert('Please check your input');
+    }
+});
+
 
