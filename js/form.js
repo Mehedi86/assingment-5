@@ -29,11 +29,53 @@ document.getElementById('noakhali-donation-btn').addEventListener('click', funct
         document.getElementById('total-balance').innerText = newTotalBalance;
 
         document.getElementById('noakhali-donation-input').value = '';
-        console.log
     }
     else {
         alert('Please check your input');
     }
 });
 
+// feni form
 
+document.getElementById('feni-donation-btn').addEventListener('click', function () {
+    const totalBalance = getElementText('total-balance');
+    const currentFeniDonation = getElementText('feni-current-donation');
+    const feniDonationInput = getInputFieldValue('feni-donation-input');
+
+    if (isNaN(feniDonationInput) === false && totalBalance > feniDonationInput) {
+        const totalFeniDonation = currentFeniDonation + feniDonationInput;
+        const newTotalBalance = totalBalance - feniDonationInput;
+
+        document.getElementById('feni-current-donation').innerText = totalFeniDonation;
+
+        document.getElementById('total-balance').innerText = newTotalBalance;
+
+        document.getElementById('feni-donation-input').value = '';
+    }
+    else {
+        alert('Please check your input');
+    }
+});
+
+// for quota movement doantion form
+
+document.getElementById('quota-doanation-form').addEventListener('click', function () {
+    const totalBalance = getElementText('total-balance');
+    const currentQuotaDonation = getElementText('quota-current-donation');
+    const quotaDonationInput = getInputFieldValue('quota-donation-input');
+
+    if (isNaN(quotaDonationInput) === false && totalBalance > quotaDonationInput) {
+        const totalQuotaDonation = currentQuotaDonation + quotaDonationInput;
+        const newTotalBalance = totalBalance - quotaDonationInput;
+
+        document.getElementById('quota-current-donation').innerText = totalQuotaDonation;
+
+        document.getElementById('total-balance').innerText = newTotalBalance;
+
+        document.getElementById('quota-donation-input').value = '';
+    }
+    else {
+        alert('Please check your input');
+    }
+
+});

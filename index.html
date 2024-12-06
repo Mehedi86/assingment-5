@@ -55,7 +55,7 @@
                     <img class="w-full h-[460px]" src="./assets/noakhali.png" alt="">
                 </div>
                 <div class="w-6/12 p-12">
-                    <div class="w-32 py-2 mb-4 pl-1 flex items-center rounded-xl bg-stone-300 font-bold">
+                    <div class="w-40 py-2 mb-4 pl-1 flex items-center rounded-xl bg-stone-300 font-bold">
                         <img src="./assets/coin.png" alt="">
                         <p class="px-2"><span id="noakhali-current-donation">0</span> BDT</p>
                     </div>
@@ -80,9 +80,9 @@
                     <img class="w-full h-[520px]" src="./assets/feni.png" alt="">
                 </div>
                 <div class="w-6/12 p-12">
-                    <div class="w-32 py-2 mb-4 pl-1 flex items-center rounded-xl bg-stone-300 font-bold">
+                    <div class="w-40 py-2 mb-4 pl-1 flex items-center rounded-xl bg-stone-300 font-bold">
                         <img src="./assets/coin.png" alt="">
-                        <p class="px-2"><span>600</span> BDT</p>
+                        <p class="px-2"><span id="feni-current-donation">600</span> BDT</p>
                     </div>
                     <h1 class="text-xl font-bold py-4">Donate for Flood Relief in Feni,Bangladesh</h1>
                     <p class="text-neutral-600 py-4 text-lg"> The recent floods in Feni have devastated local
@@ -91,7 +91,7 @@
                         calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this
                         disaster. Every contribution counts towards making a real difference. Please consider donating
                         today to assist those in urgent need.</p>
-                    <input type="text" placeholder="Write Donation Amount"
+                    <input id="feni-donation-input" type="text" placeholder="Write Donation Amount"
                         class="input my-4 h-16  input-bordered w-full" />
                     <button id="feni-donation-btn" class="bg-lime-300 w-full text-xl font-bold px-6 py-4 my-2 rounded shadow-lg">Donate
                         Now</button>
@@ -105,9 +105,9 @@
                     <img class="w-full h-[540px]" src="./assets/quota-protest.png" alt="">
                 </div>
                 <div class="w-6/12 p-12">
-                    <div class="w-32 py-2 mb-4 pl-1 flex items-center rounded-xl bg-stone-300 font-bold">
+                    <div class="w-40 py-2 mb-4 pl-1 flex items-center rounded-xl bg-stone-300 font-bold">
                         <img src="./assets/coin.png" alt="">
-                        <p class="px-2"><span>2400</span> BDT</p>
+                        <p class="px-2"><span id="quota-current-donation">2400</span> BDT</p>
                     </div>
                     <h1 class="text-xl font-bold py-4">Aid for Injured in the Quota Movement</h1>
                     <p class="text-neutral-600 py-4 text-lg"> The recent Quota movement has resulted in numerous
@@ -117,9 +117,9 @@
                         challenging time. Every donation plays a vital role in alleviating their suffering and aiding in
                         their recovery. Please consider making a donation to support these brave individuals in their
                         time of need.</p>
-                    <input type="text" placeholder="Write Donation Amount"
+                    <input id="quota-donation-input" type="text" placeholder="Write Donation Amount"
                         class="input my-4 h-16  input-bordered w-full" />
-                    <button class="bg-lime-300 w-full text-xl font-bold px-6 py-4 my-2 rounded shadow-lg">Donate
+                    <button id="quota-doanation-form" class="bg-lime-300 w-full text-xl font-bold px-6 py-4 my-2 rounded shadow-lg">Donate
                         Now</button>
                 </div>
             </div>
@@ -131,7 +131,7 @@
     </main>
     <footer></footer>
     <script src="./js/utilities.js"></script>
-    <script src="./js/home.js"></script>
+    <script src="./js/form.js"></script>
 </body>
 
 </html>
