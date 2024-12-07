@@ -25,7 +25,7 @@ document.getElementById('noakhali-donation-btn').addEventListener('click', funct
     const totalBalance = getElementText('total-balance');
     const currentNoakhaliDonation = getElementText('noakhali-current-donation');
     const noakhaliDonationInput = getInputFieldValue('noakhali-donation-input');
-    if (isNaN(noakhaliDonationInput) === false && totalBalance > noakhaliDonationInput) {
+    if (isNaN(noakhaliDonationInput) === false && totalBalance > noakhaliDonationInput && noakhaliDonationInput > 0) {
         const totalNoakhaliDonation = currentNoakhaliDonation + noakhaliDonationInput;
         const newTotalBalance = totalBalance - noakhaliDonationInput;
         document.getElementById('noakhali-current-donation').innerText = totalNoakhaliDonation;
@@ -44,7 +44,9 @@ document.getElementById('noakhali-donation-btn').addEventListener('click', funct
         document.getElementById('history-section').innerHTML = historyInnerHtml + newHtml;
     }
     else {
+        document.getElementById('my_modal_1').close();
         alert('Please check your input');
+        
     }
 });
 
@@ -55,7 +57,7 @@ document.getElementById('feni-donation-btn').addEventListener('click', function 
     const currentFeniDonation = getElementText('feni-current-donation');
     const feniDonationInput = getInputFieldValue('feni-donation-input');
 
-    if (isNaN(feniDonationInput) === false && totalBalance > feniDonationInput) {
+    if (isNaN(feniDonationInput) === false && totalBalance > feniDonationInput && feniDonationInput > 0) {
         const totalFeniDonation = currentFeniDonation + feniDonationInput;
         const newTotalBalance = totalBalance - feniDonationInput;
 
@@ -75,6 +77,7 @@ document.getElementById('feni-donation-btn').addEventListener('click', function 
         document.getElementById('history-section').innerHTML = historyInnerHtml + newHtml;
     }
     else {
+        document.getElementById('my_modal_1').close();
         alert('Please check your input');
     }
 });
@@ -86,7 +89,7 @@ document.getElementById('quota-doanation-form').addEventListener('click', functi
     const currentQuotaDonation = getElementText('quota-current-donation');
     const quotaDonationInput = getInputFieldValue('quota-donation-input');
 
-    if (isNaN(quotaDonationInput) === false && totalBalance > quotaDonationInput) {
+    if (isNaN(quotaDonationInput) === false && totalBalance > quotaDonationInput && quotaDonationInput > 0) {
         const totalQuotaDonation = currentQuotaDonation + quotaDonationInput;
         const newTotalBalance = totalBalance - quotaDonationInput;
 
@@ -97,6 +100,7 @@ document.getElementById('quota-doanation-form').addEventListener('click', functi
         document.getElementById('quota-donation-input').value = '';
 
         const historyInnerHtml = document.getElementById('history-section').innerHTML;
+        my_modal_1.showModal();
 
         const newHtml = `<div class="w-10/12 p-4 mx-auto m-4 border-2 rounded-lg">
             <h1 class="text-xl font-bold text-black py-2">${quotaDonationInput} Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh</h1>
@@ -106,6 +110,7 @@ document.getElementById('quota-doanation-form').addEventListener('click', functi
         document.getElementById('history-section').innerHTML = historyInnerHtml + newHtml;
     }
     else {
+        document.getElementById('my_modal_1').close();
         alert('Please check your input');
     }
 
