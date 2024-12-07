@@ -46,8 +46,28 @@
             </div>
         </section>
 
+        <!-- Modal Section -->
+
+        <section>
+            <dialog id="my_modal_1" class="modal">
+                <div class="modal-box text-center">
+                    <h1 class="text-4xl font-bold">Congrates!</h1>
+                    <img class="mx-auto my-6" src="./assets/coin.png" alt="">
+                    <p class="py-4">You have donated for Humankind</p>
+                    <h1 class="text-2xl font-bold">Successfully</h1>
+                    <div class="modal-action">
+                        <form class="w-full" method="dialog">
+                            <button class="btn mx-auto">close confirmation</button>
+                        </form>
+                    </div>
+                </div>
+            </dialog>
+        </section>
+
         <!-- card box -->
+
         <section id="donation-section">
+
             <!-- Noakhali donation card -->
 
             <div class="container mx-auto flex rounded-xl border-2 my-12">
@@ -68,7 +88,9 @@
                         and making a positive impact on the lives of those in need.</p>
                     <input id="noakhali-donation-input" type="text" placeholder="Write Donation Amount"
                         class="input my-4 h-16  input-bordered w-full" />
-                    <button id="noakhali-donation-btn" class="bg-lime-300 w-full text-xl font-bold px-6 py-4 my-2 rounded shadow-lg">Donate
+                    <button id="noakhali-donation-btn"
+                        class="bg-lime-300 w-full text-xl font-bold px-6 py-4 my-2 rounded shadow-lg"
+                        onclick="my_modal_1.showModal()">Donate
                         Now</button>
                 </div>
             </div>
@@ -93,7 +115,9 @@
                         today to assist those in urgent need.</p>
                     <input id="feni-donation-input" type="text" placeholder="Write Donation Amount"
                         class="input my-4 h-16  input-bordered w-full" />
-                    <button id="feni-donation-btn" class="bg-lime-300 w-full text-xl font-bold px-6 py-4 my-2 rounded shadow-lg">Donate
+                    <button id="feni-donation-btn"
+                        class="bg-lime-300 w-full text-xl font-bold px-6 py-4 my-2 rounded shadow-lg"
+                        onclick="my_modal_1.showModal()">Donate
                         Now</button>
                 </div>
             </div>
@@ -119,7 +143,9 @@
                         time of need.</p>
                     <input id="quota-donation-input" type="text" placeholder="Write Donation Amount"
                         class="input my-4 h-16  input-bordered w-full" />
-                    <button id="quota-doanation-form" class="bg-lime-300 w-full text-xl font-bold px-6 py-4 my-2 rounded shadow-lg">Donate
+                    <button id="quota-doanation-form"
+                        class="bg-lime-300 w-full text-xl font-bold px-6 py-4 my-2 rounded shadow-lg"
+                        onclick="my_modal_1.showModal()">Donate
                         Now</button>
                 </div>
             </div>
