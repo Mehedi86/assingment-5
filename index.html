@@ -24,13 +24,13 @@
 <body class="lexend-font">
     <header>
         <!-- navbar -->
-        <nav class="bg-stone-200 h-40 ">
-            <ul class="container mx-auto pt-8 flex justify-between items-center text-black font-bold text-lg">
-                <li><button id="blog-button" class="bg-lime-300 px-6 py-2 rounded shadow-lg">Blog</button></li>
-                <li class="flex items-center"><img src="./assets/logo.png" alt="">
+        <nav class="bg-stone-200 md:h-40 ">
+            <ul class="md:container mx-auto pt-8 md:flex justify-between items-center text-black font-bold text-lg">
+                <li class="flex justify-center"><button id="blog-button" class="bg-lime-300 px-6 py-2 my-2 rounded shadow-lg">Blog</button></li>
+                <li class="flex items-center justify-center my-2"><img src="./assets/logo.png" alt="">
                     <p class="px-2">Donate Bangladesh</p>
                 </li>
-                <li class="flex items-center"><img src="./assets/coin.png" alt="">
+                <li class="flex items-center justify-center py-2"><img src="./assets/coin.png" alt="">
                     <p class="px-2"><span id="total-balance">200000</span> BDT</p>
                 </li>
             </ul>
@@ -39,7 +39,7 @@
     <main>
         <!-- button-toggle-section -->
         <section>
-            <div class="w-2/12 mx-auto flex justify-around text-lg text-black font-bold p-4 my-20">
+            <div class="w-80 mx-auto flex justify-around text-lg text-black font-bold p-4 my-20">
                 <button id="toggle-donation-btn"
                     class="px-6 py-2 rounded border-2 border-neutral-200 bg-lime-300">Donation</button>
                 <button id="toggle-history-btn" class="px-6 py-2 rounded border-2 border-neutral-200">History</button>
@@ -71,7 +71,7 @@
             <!-- Noakhali donation card -->
 
             <div class="container mx-auto flex rounded-xl border-2 my-12">
-                <div class="w-6/12 p-12 card-img-div">
+                <div class="w-6/12 p-12">
                     <img class="w-full h-[460px]" src="./assets/noakhali.png" alt="">
                 </div>
                 <div class="w-6/12 p-12">
