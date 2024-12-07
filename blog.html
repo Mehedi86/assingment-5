@@ -39,37 +39,49 @@
 
     <!-- accordion section -->
     <div class="w-10/12 mx-auto">
-    <h1 class="text-4xl font-bold text-black py-12">Important FAQ</h1>
-    <div class="join join-vertical w-full">
-        <div class="collapse collapse-arrow join-item border-base-300 border">
-            <input type="radio" name="my-accordion-4" checked="checked" />
-            <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
-            <div class="collapse-content">
-                <p>hello</p>
+        <h1 class="text-4xl font-bold text-black py-12">Important FAQ</h1>
+        <div class="join join-vertical w-full">
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+                <input type="radio" name="my-accordion-4" checked="checked" />
+                <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
+                <div class="collapse-content">
+                    <p class="text-xl">It is a model based on javascript object as like a tree. Its convert every html
+                        element and its inner child or things as node and can provide some useful facility. Facilities
+                        it provide like manipulate the website or html and also its css style, select or get the html
+                        element, add event etc. </p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+                <input type="radio" name="my-accordion-4" />
+                <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+                <div class="collapse-content">
+                    <p class="text-xl">If I want to select an element I will use method like getElementById(),
+                        querySelector(). </p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+                <input type="radio" name="my-accordion-4" />
+                <div class="collapse-title text-xl font-medium">What is the event delegation in the context of the DOM,
+                    and why is it useful?</div>
+                <div class="collapse-content">
+                    <p class="text-xl">Event delegation is a concept like that, if parent element has event handler or
+                        event listener then, this event listener also work on this parent's child. We can use event
+                        listener on multiple child element just use a event listener on their parent.
+                        It is very useful because it provide the scope to use less event listener and it decrease the
+                        complexiety of code.
+                    </p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+                <input type="radio" name="my-accordion-4" />
+                <div class="collapse-title text-xl font-medium">How do you manipulate an elements attributes and styles
+                    using the DOM?</div>
+                <div class="collapse-content">
+                    <p class="text-xl">First I get the element and then manipulate the attribute and styles by the use of simultenuosly setAttruibute(), getAttribute(), removeAttribute(), style. As example,<br>For manipulate attribute:<br>document.getElementById('div-element').getAttruibute('class'),<br>document.getElementById('div-element').setAttruibute('class', 'w-full')<br>For manipulte styles :<br>document.getElementById('div-element').style.color = 'green';</p>
+                </div>
             </div>
         </div>
-        <div class="collapse collapse-arrow join-item border-base-300 border">
-            <input type="radio" name="my-accordion-4" />
-            <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
-            <div class="collapse-content">
-                <p>hello</p>
-            </div>
-        </div>
-        <div class="collapse collapse-arrow join-item border-base-300 border">
-            <input type="radio" name="my-accordion-4" />
-            <div class="collapse-title text-xl font-medium">What is the event delegation in the context of the DOM, and why is it useful?</div>
-            <div class="collapse-content">
-                <p>hello</p>
-            </div>
-        </div>
-        <div class="collapse collapse-arrow join-item border-base-300 border">
-            <input type="radio" name="my-accordion-4" />
-            <div class="collapse-title text-xl font-medium">How do you manipulate an elements attributes and styles using the DOM?</div>
-            <div class="collapse-content">
-                <p>hello</p>
-            </div>
-        </div>
-    </div></div>
+    </div>
     <script src="./js/blog.js"></script>
 </body>
 

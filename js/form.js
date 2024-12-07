@@ -46,7 +46,8 @@ document.getElementById('noakhali-donation-btn').addEventListener('click', funct
     else {
         document.getElementById('my_modal_1').close();
         alert('Please check your input');
-        
+        document.getElementById('noakhali-donation-input').value = '';
+
     }
 });
 
@@ -79,6 +80,7 @@ document.getElementById('feni-donation-btn').addEventListener('click', function 
     else {
         document.getElementById('my_modal_1').close();
         alert('Please check your input');
+        document.getElementById('feni-donation-input').value = '';
     }
 });
 
@@ -112,6 +114,7 @@ document.getElementById('quota-doanation-form').addEventListener('click', functi
     else {
         document.getElementById('my_modal_1').close();
         alert('Please check your input');
+        document.getElementById('quota-donation-input').value = '';
     }
 
 });
