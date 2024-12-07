@@ -29,6 +29,15 @@ document.getElementById('noakhali-donation-btn').addEventListener('click', funct
         document.getElementById('total-balance').innerText = newTotalBalance;
 
         document.getElementById('noakhali-donation-input').value = '';
+
+        const historyInnerHtml = document.getElementById('history-section').innerHTML;
+
+        const newHtml = `<div class="w-10/12 p-4 mx-auto m-4 border-2 rounded-lg">
+            <h1 class="text-xl font-bold text-black py-2">Taka is Donated for Flood Relief in Noakhali, Bangladesh</h1>
+            <p class="text-lg text-neutral-600">Date:</p>
+            </div>`;
+
+        document.getElementById('history-section').innerHTML = historyInnerHtml + newHtml;
     }
     else {
         alert('Please check your input');
@@ -51,6 +60,15 @@ document.getElementById('feni-donation-btn').addEventListener('click', function 
         document.getElementById('total-balance').innerText = newTotalBalance;
 
         document.getElementById('feni-donation-input').value = '';
+
+        const historyInnerHtml = document.getElementById('history-section').innerHTML;
+
+        const newHtml = `<div class="w-10/12 p-4 mx-auto m-4 border-2 rounded-lg">
+            <h1 class="text-xl font-bold text-black py-2">Taka is Donated for Flood Relief in Feni,Bangladesh</h1>
+            <p class="text-lg text-neutral-600">Date:</p>
+            </div>`;
+
+        document.getElementById('history-section').innerHTML = historyInnerHtml + newHtml;
     }
     else {
         alert('Please check your input');
@@ -73,6 +91,15 @@ document.getElementById('quota-doanation-form').addEventListener('click', functi
         document.getElementById('total-balance').innerText = newTotalBalance;
 
         document.getElementById('quota-donation-input').value = '';
+
+        const historyInnerHtml = document.getElementById('history-section').innerHTML;
+
+        const newHtml = `<div class="w-10/12 p-4 mx-auto m-4 border-2 rounded-lg">
+            <h1 class="text-xl font-bold text-black py-2">Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh</h1>
+            <p class="text-lg text-neutral-600">Date:</p>
+            </div>`;
+
+        document.getElementById('history-section').innerHTML = historyInnerHtml + newHtml;
     }
     else {
         alert('Please check your input');
@@ -85,4 +112,5 @@ document.getElementById('blog-button').addEventListener('click', function () {
 
     window.location.href = 'blog.html';
 });
+
 
