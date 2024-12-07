@@ -13,7 +13,11 @@ document.getElementById('toggle-history-btn').addEventListener('click', function
     document.getElementById('history-section').classList.remove('hidden');
     document.getElementById('toggle-donation-btn').classList.remove('bg-lime-300');
     document.getElementById('toggle-history-btn').classList.add('bg-lime-300');
-})
+});
+
+// time 
+
+const date = new Date();
 
 // Noakhali form
 
@@ -33,8 +37,8 @@ document.getElementById('noakhali-donation-btn').addEventListener('click', funct
         const historyInnerHtml = document.getElementById('history-section').innerHTML;
 
         const newHtml = `<div class="w-10/12 p-4 mx-auto m-4 border-2 rounded-lg">
-            <h1 class="text-xl font-bold text-black py-2">Taka is Donated for Flood Relief in Noakhali, Bangladesh</h1>
-            <p class="text-lg text-neutral-600">Date:</p>
+            <h1 class="text-xl font-bold text-black py-2">${noakhaliDonationInput} Taka is Donated for Flood Relief in Noakhali, Bangladesh</h1>
+            <p class="text-lg text-neutral-600">Date: ${date}</p>
             </div>`;
 
         document.getElementById('history-section').innerHTML = historyInnerHtml + newHtml;
@@ -64,8 +68,8 @@ document.getElementById('feni-donation-btn').addEventListener('click', function 
         const historyInnerHtml = document.getElementById('history-section').innerHTML;
 
         const newHtml = `<div class="w-10/12 p-4 mx-auto m-4 border-2 rounded-lg">
-            <h1 class="text-xl font-bold text-black py-2">Taka is Donated for Flood Relief in Feni,Bangladesh</h1>
-            <p class="text-lg text-neutral-600">Date:</p>
+            <h1 class="text-xl font-bold text-black py-2">${feniDonationInput} Taka is Donated for Flood Relief in Feni,Bangladesh</h1>
+            <p class="text-lg text-neutral-600">Date: ${date}</p>
             </div>`;
 
         document.getElementById('history-section').innerHTML = historyInnerHtml + newHtml;
@@ -95,8 +99,8 @@ document.getElementById('quota-doanation-form').addEventListener('click', functi
         const historyInnerHtml = document.getElementById('history-section').innerHTML;
 
         const newHtml = `<div class="w-10/12 p-4 mx-auto m-4 border-2 rounded-lg">
-            <h1 class="text-xl font-bold text-black py-2">Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh</h1>
-            <p class="text-lg text-neutral-600">Date:</p>
+            <h1 class="text-xl font-bold text-black py-2">${quotaDonationInput} Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh</h1>
+            <p class="text-lg text-neutral-600">Date: ${date}</p>
             </div>`;
 
         document.getElementById('history-section').innerHTML = historyInnerHtml + newHtml;
