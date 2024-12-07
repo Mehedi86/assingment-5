@@ -79,3 +79,10 @@ document.getElementById('quota-doanation-form').addEventListener('click', functi
     }
 
 });
+
+// blog button workings
+document.getElementById('blog-button').addEventListener('click', function () {
+
+    window.location.href = 'blog.html';
+});
+
